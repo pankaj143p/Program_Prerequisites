@@ -1,7 +1,8 @@
+package PracticeProblems;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-class Substraction{
-   public static void main(String[] args) throws Exception{
+class Sum{
+    public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String[] inputs = new String[2];
         System.out.println("Enter first number: ");
@@ -11,10 +12,9 @@ class Substraction{
         int a = Integer.parseInt(inputs[0]);
         int b = Integer.parseInt(inputs[1]);
         int c = add(a, b);
-        System.out.println("Substraction of " + a + " and " + b + " is " + c);
+        System.out.println("Addition of " + a + " and " + b + " is " + c);
     }
     public static int add(int a, int b){
-        return a - b;
+        return a + b;
     }
 }
-
